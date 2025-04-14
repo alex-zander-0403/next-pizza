@@ -1,4 +1,3 @@
-// tsrafce
 import React from "react";
 
 interface Props {
@@ -6,9 +5,6 @@ interface Props {
 }
 
 //
-const MyComponent: React.FC<Props> = ({ props }) => {
-  return <div>MyComponent</div>;
+export const Categories: React.FC<Props> = ({ className }) => {
+  return <div className="className">MyComponent</div>;
 };
-
-//
-export default MyComponent;
