@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import { Nunito, Geist, Geist_Mono } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/shared";
 
 const nunito = Nunito({
   subsets: ["cyrillic"],
   variable: "--font-nunito",
   weight: ["400", "500", "600", "700", "800", "900"],
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 // seo
@@ -31,11 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${nunito.variable} antialiased`}>
         {/* высота приложения */}
         <main className="min-h-screen">
+          <Header />
           {children}
-          </main>
+        </main>
       </body>
     </html>
   );
