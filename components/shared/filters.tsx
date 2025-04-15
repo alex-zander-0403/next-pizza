@@ -36,8 +36,16 @@ export const Filters: React.FC<Props> = ({ className }) => {
           title="Ингридиенты:"
           className="mt-5"
           limit={6}
-          defaultItems={[{ text: "sdf", value: "1" }]}
-          items={[{ text: "sdf", value: "1" }]}
+          defaultItems={[
+            { text: "cheese", value: "1" },
+            { text: "tomato", value: "2" },
+            { text: "onion", value: "3" },
+          ]}
+          items={[
+            { text: "cheese", value: "1" },
+            { text: "tomato", value: "2" },
+            { text: "onion", value: "3" },
+          ]}
         />
       </div>
     </div>
