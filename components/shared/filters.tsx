@@ -35,16 +35,28 @@ export const Filters: React.FC<Props> = ({ className }) => {
         <CheckboxFilteredGroup
           title="Ингридиенты:"
           className="mt-5"
-          limit={6}
+          limit={5}
           defaultItems={[
             { text: "cheese", value: "1" },
             { text: "tomato", value: "2" },
             { text: "onion", value: "3" },
+            { text: "cheese", value: "4" },
+            { text: "tomato", value: "5" },
+            { text: "onion", value: "6" },
+            { text: "cheese", value: "7" },
+            { text: "tomato", value: "8" },
+            { text: "onion", value: "9" },
           ]}
           items={[
             { text: "cheese", value: "1" },
             { text: "tomato", value: "2" },
             { text: "onion", value: "3" },
+            { text: "cheese", value: "4" },
+            { text: "tomato", value: "5" },
+            { text: "onion", value: "6" },
+            { text: "cheese", value: "7" },
+            { text: "tomato", value: "8" },
+            { text: "onion", value: "9" },
           ]}
         />
       </div>
